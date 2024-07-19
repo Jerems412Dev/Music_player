@@ -13,7 +13,6 @@ const content = document.querySelector(".content");
 
 let isDragging = false;
 let intervalId;
-TotalTime.textContent = formatTime(audio.duration);
 
 btn_span.addEventListener("mousedown", (e) => {
   isDragging = true;
@@ -144,3 +143,5 @@ const onTouchEnd = () => {
   document.removeEventListener("touchmove", onTouchMove);
   document.removeEventListener("touchend", onTouchEnd);
 };
+
+TotalTime.textContent = formatTime(audio.duration);
