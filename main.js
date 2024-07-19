@@ -145,3 +145,4 @@ const onTouchEnd = () => {
 };
 
 TotalTime.textContent = formatTime(audio.duration);
+TotalTime.textContent = "03:58";
