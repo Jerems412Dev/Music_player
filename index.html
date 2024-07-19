@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Frontend Mentor | Social links profile</title>
+</head>
+
+<body>
+  <section class="container">
+    <div class="content">
+      <div class="top">
+        <div>
+          <div class="img">
+            <img src="assets/images/song.jpg" alt="">
+          </div>
+          <ul>
+            <li>Didn't Cha Know</li>
+            <li>Eryka Badu</li>
+          </ul>
+        </div>
+        <ion-icon name="checkmark-circle"></ion-icon>
+      </div>
+      <div class="center">
+        <div>
+          <span id="currentTime">00:00</span>
+          <span id="TotalTime">00:00</span>
+        </div>
+        <div>
+          <div class="range" id="rangeContent">
+            <audio src="assets/music/song.mp3" id="audio"></audio>
+            <span id="range_span">
+              <button id="btn_span"></button>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <ion-icon name="shuffle" id="random"></ion-icon>
+        <ion-icon name="skip-backward" id="back"></ion-icon>
+        <ion-icon name="pause" id="pause" style="display: none;"></ion-icon>
+        <ion-icon name="play" id="play" style="display: block;"></ion-icon>
+        <ion-icon name="skip-forward" id="next"></ion-icon>
+        <ion-icon name="swap" id="repeat"></ion-icon>
+      </div>
+    </div>
+    <div class="attribution">
+      Design by
+      <a href="https://dribbble.com/shots/23528020-Glass-Audio-Player" target="_blank">Voicu Apostol</a>. Coded by <a
+        href="https://github.com/Jerems412Dev/Music_player">Jeremy-Evrard OBIANG-ENGONE</a>.
+    </div>
+  </section>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
