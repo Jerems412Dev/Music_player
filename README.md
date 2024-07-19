@@ -1,4 +1,4 @@
-# Frontend Mentor - Social links profile solution
+# Integration of a dribble design
 
 This is an integration to the [Glass Audio Player design on dribble](https://dribbble.com/shots/23528020-Glass-Audio-Player).
 
