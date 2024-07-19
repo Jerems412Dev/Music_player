@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here is my repos](https://github.com/Jerems412Dev/Music_player)
-- Live Site URL: [Here is the site url]([https://github.com/Jerems412Dev/Music_player](https://music-player-ten-blue.vercel.app/))
+- Live Site URL: [Here is the site url](https://github.com/Jerems412Dev/Music_player)
 
 ## My process
 
