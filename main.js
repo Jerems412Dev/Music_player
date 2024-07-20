@@ -54,15 +54,18 @@ range.addEventListener("click", (e) => {
 });
 
 function seekUpdate() {
+  let remainingTime = 0;
   intervalId = setInterval(() => {
     if (!audio.paused) {
-      currentTime.textContent = this.formatTime(audio.currentTime);
+      currentTime.textContent = formatTime(audio.currentTime);
       let val = (
         (audio.currentTime / audio.duration) *
         range.getBoundingClientRect().width
       ).toString();
       btn_span.style.left = `${val}px`;
       range_span.style.width = `${val}px`;
+      remainingTime = audio.currentTime - audio.duration;
+      TotalTime.innerText = formatTotalTime(remainingTime);
     }
   }, 1000);
 }
@@ -81,6 +84,13 @@ function formatTime(time) {
   const minutes = Math.floor(time / 60);
   const seconds = Math.floor(time - minutes * 60);
   return `${this.padZero(minutes)}:${this.padZero(seconds)}`;
+}
+
+function formatTotalTime(time) {
+  time *= -1;
+  const minutes = Math.floor(time / 60);
+  const seconds = Math.floor(time - minutes * 60);
+  return `-${this.padZero(minutes)}:${this.padZero(seconds)}`;
 }
 
 play.addEventListener("click", () => {
@@ -143,6 +153,3 @@ const onTouchEnd = () => {
   document.removeEventListener("touchmove", onTouchMove);
   document.removeEventListener("touchend", onTouchEnd);
 };
-
-TotalTime.textContent = formatTime(audio.duration);
-TotalTime.textContent = "03:58";
